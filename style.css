@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif ;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #5c5395;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.heading{
+    display: flex;
+}
+.heading p{
+    margin-top: 8px;
+}
+
+.container h2{
+    color: white;
+    margin-bottom: 35px;
+}
+.plan{
+margin-top: 50px;
+font-weight: 900;
+font-size: 30px;
+}
+.pricelist{
+display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 25px;
+
+}
+.firstbox{
+    width: 20vw;
+    background-color: #20283e;
+    border-radius: 5px;
+    padding-top: 15px;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.firstbox ul{
+    margin-left: 25px;
+}
+.firstbox ul li{
+    margin-bottom: 7px;
+}
+
+.secondbox{
+    width: 20vw;
+    background-color: #20283e;
+    border-radius: 5px;
+    padding-top: 15px;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secondbox ul{
+    margin-left: 25px;
+}
+.secondbox ul li{
+    margin-bottom: 7px;
+}
+
+.thirdbox{
+    width: 20vw;
+    background-color: #20283e;
+    border-radius: 5px;
+    padding-top: 15px;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thirdbox ul{
+    margin-left: 25px;
+    
+}
+.thirdbox ul li{
+    margin-bottom: 7px;
+}
+.firstbox strong{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.secondbox strong{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.thirdbox strong{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.btn{
+    width: 80%;
+    height:40px;
+    align-items: center;
+    color: white;
+    background-color: #20283e;
+    border: 2px solid #5d2c3c;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #5c5395;
+}
+.hide{
+    display: none;
+}
+.msg{
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px; /* Adjust as needed for small screens */
+        height: 100%;
+        width: 100%;
+    }
+
+    .pricelist {
+        flex-direction: column; /* Stack pricelist items vertically */
+    }
+
+    .firstbox,
+    .secondbox,
+    .thirdbox {
+        width: 80vw; /* Adjust as needed for small screens */
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    /* Add specific styles for tablets if needed */
+    .container {
+        padding: 10px; /* Adjust as needed for small screens */
+        height: 100%;
+        width: 100%;
+    }
+
+    .pricelist {
+        flex-direction: column; /* Stack pricelist items vertically */
+    }
+
+    .firstbox,
+    .secondbox,
+    .thirdbox {
+        width: 80vw; /* Adjust as needed for small screens */
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1285px) {
+    /* Add specific styles for tablets if needed */
+    .container { /* Adjust as needed for small screens */
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .pricelist {
+        flex-direction: row; /* Stack pricelist items vertically */
+    }
+
+    .firstbox,
+    .secondbox,
+    .thirdbox {
+        width: 20vw; /* Adjust as needed for small screens */
+    }
+}
+
